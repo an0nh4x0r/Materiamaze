@@ -1,2 +1,2 @@
 # Materiamaze
-Open Source Material Design Admin Template.
+Material Design based Admin Template.
