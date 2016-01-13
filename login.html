@@ -9,69 +9,71 @@
         <link rel="stylesheet" href="assets/mdl/material.min.css"/>
         <script src="assets/mdl/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" href="assets/css/login.css"/>
     </head>
     <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Materiamaze</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                        <a class="mdl-navigation__link" href="">Link</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">Materiamaze</span>
-                <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="">Link</a>
                     <a class="mdl-navigation__link" href="">Link</a>
                     <a class="mdl-navigation__link" href="">Link</a>
                     <a class="mdl-navigation__link" href="">Link</a>
                 </nav>
             </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Materiamaze</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="page-content">
+            <main class="mdl-layout__content">
+                <div class="page-content">
 
-                <div class="mdl-grid">
-                    <div class="mdl-layout-spacer"></div>
-                    <div class="mdl-grid--no-spacing mdl-card mdl-shadow--2dp">
+                    <div class="mdl-grid" id="logincard">
                         <div class="mdl-layout-spacer"></div>
-                        <form action="#">
-                            <div class="mdl-grid mdl-grid--no-spacing">
-                                <div class="mdl-layout-spacer"></div>
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
-                                    <input class="mdl-textfield__input" type="text" id="username"/>
-                                    <label class="mdl-textfield__label" for="username">Username</label>
+                        <div class="mdl-grid--no-spacing mdl-card mdl-shadow--2dp">
+                            <div class="mdl-layout-spacer"></div>
+                            <form action="#">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-layout-spacer"></div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
+                                        <input class="mdl-textfield__input" type="text" id="username"/>
+                                        <label class="mdl-textfield__label" for="username">Username</label>
+                                    </div>
+                                    <div class="mdl-layout-spacer"></div>
                                 </div>
-                                <div class="mdl-layout-spacer"></div>
-                            </div>
-                            <div class="mdl-grid mdl-grid--no-spacing">
-                                <div class="mdl-layout-spacer"></div>
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
-                                    <input class="mdl-textfield__input" type="password" id="password"/>
-                                    <label class="mdl-textfield__label" for="password">Password</label>
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-layout-spacer"></div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
+                                        <input class="mdl-textfield__input" type="password" id="password"/>
+                                        <label class="mdl-textfield__label" for="password">Password</label>
+                                    </div>
+                                    <div class="mdl-layout-spacer"></div>
                                 </div>
-                                <div class="mdl-layout-spacer"></div>
-                            </div>
-                            <div class="mdl-grid mdl-grid--no-spacing">
-                                <div class="mdl-layout-spacer"></div>
-                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                                    Login
-                                </button>
-                                <div class="mdl-layout-spacer"></div>
-                            </div>
-                        </form>
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-layout-spacer"></div>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                        Login
+                                    </button>
+                                    <div class="mdl-layout-spacer"></div>
+                                </div>
+                            </form>
+                            <div class="mdl-layout-spacer"></div>
+                        </div>
                         <div class="mdl-layout-spacer"></div>
                     </div>
-                    <div class="mdl-layout-spacer"></div>
-                </div>
 
-            </div>
-        </main>
-    </div>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
