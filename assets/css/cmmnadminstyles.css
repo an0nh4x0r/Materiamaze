@@ -1,0 +1,11 @@
+/*
+    This snippet basically removes the horizontal
+    scrolling comes in the sidebar
+*/
+
+.mdl-layout__drawer{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*Good snippet*/
