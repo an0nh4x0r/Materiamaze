@@ -4,7 +4,7 @@
 }
 
 #loginbutton{
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #logincheckbox{
@@ -23,4 +23,9 @@
 #lock_password{
     margin-top: 20px;
     margin-right: 5px;
+}
+
+#dashboard_header{
+    margin-top: 22px;
+    margin-right: 2px;
 }
