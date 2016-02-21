@@ -14,3 +14,13 @@
 #logincheckbox__span{
     font-size: 12px;
 }
+
+#account_circle_username{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+#lock_password{
+    margin-top: 20px;
+    margin-right: 5px;
+}
