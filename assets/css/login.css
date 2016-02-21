@@ -2,3 +2,11 @@
     margin-top: 50px;
     height: 250px;
 }
+
+#loginbutton{
+    margin-left: 50px;
+}
+
+#logincheckbox__span{
+    font-size: 12px;
+}
