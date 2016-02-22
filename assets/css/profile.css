@@ -1,3 +1,19 @@
 .header_ul_a{
     text-decoration: none;
 }
+
+.demo-card-image.mdl-card {
+    width: 240px;
+    height: 200px;
+    background: url('../images/profile_pic.png') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+    height: 25px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
