@@ -8,6 +8,6 @@
 <ul>
     <li>Material Design Lite</li>
     <li>Holder.js</li>
-    <li>Pace.js</li>
+    <li>Pace</li>
     <li>Sweet Alert 2</li>
 </ul>
