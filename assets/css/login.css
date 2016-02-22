@@ -13,6 +13,7 @@
 
 #logincheckbox__span{
     font-size: 12px;
+    font-style: italic;
 }
 
 #account_circle_username{
@@ -28,4 +29,9 @@
 #dashboard_header{
     margin-top: 22px;
     margin-right: 2px;
+}
+
+#forgot_password{
+    font-style: italic;
+    font-size: 10px;
 }
