@@ -1,21 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="x-ua-compatible" content="IE=edge">
-        <meta name="description" content="Login page for Materiamaze.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>Landing Page</title>
-        <script src="assets/js/pace.min.js"></script>
-        <link rel="stylesheet" href="assets/css/pace.css"/>
-        <link rel="stylesheet" href="assets/mdl/material.teal-light_green.min.css"/>
-        <script src="assets/mdl/material.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-        <link rel="stylesheet" href="assets/css/landing_page.css"/>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="description" content="Login page for Materiamaze.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Landing Page</title>
+    <script src="assets/js/pace.min.js"></script>
+    <link rel="stylesheet" href="assets/css/pace.css"/>
+    <link rel="stylesheet" href="assets/mdl/material.teal-light_green.min.css"/>
+    <script src="assets/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="assets/js/holder.min.js"></script>
+    <link rel="stylesheet" href="assets/css/horizontal_scroller_remover.css"/>
+    <link rel="stylesheet" href="assets/css/link_in_drawer.css"/>
+    <link rel="stylesheet" href="assets/css/css/bootstrap.min.css"/>
+</head>
+<body>
 
-        <img src="assets/images/Materiamaze.gif" alt=""/>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Materiamaze</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon"
+                           for="fixed-header-drawer-exp">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample"
+                               id="fixed-header-drawer-exp">
+                    </div>
+                </div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <!--<span class="mdl-layout-title">Materiamaze</span>-->
+            <img data-src="holder.js/240x200" src="" alt=""/>
+            <nav class="mdl-navigation custom_navigation">
+                <!--<a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>-->
+                <hr/>
+                <a class="mdl-navigation__link" href="">Normal Links</a>
+                <a class="mdl-navigation__link" href="">Normal Links</a>
+                <hr/>
+                <div>
+                    <h5 class="custom_navigation__header">Main Link</h5>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </div>
+                <hr/>
+                <div>
+                    <h5 class="custom_navigation__header">Main Link</h5>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </div>
+                <hr/>
+                <div>
+                    <h5 class="custom_navigation__header">Main Link</h5>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </div>
+                <hr/>
+                <div>
+                    <h5 class="custom_navigation__header">Main Link</h5>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </div>
+                <hr/>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
 
-    </body>
+                <img id="image_landing_page" class="img-responsive center-block" src="assets/images/Materiamaze.gif" alt=""/>
+                
+            </div>
+        </main>
+    </div>
+
+</body>
 </html>
