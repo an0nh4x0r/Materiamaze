@@ -6,6 +6,7 @@
 
 <h3>Frameworks & Libraries used :</h3>
 <ul>
+    <li>Bootstrap( for responsive utilities )</li>
     <li>Material Design Lite</li>
     <li>Holder.js</li>
     <li>Pace</li>
