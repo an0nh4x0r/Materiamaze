@@ -4,3 +4,10 @@
 
 <h2>Current version : v0.0.1</h2>
 
+<ul>
+    <h3>Frameworks & Libraries used :</h3>
+    <li>Material Design Lite</li>
+    <li>Holder.js</li>
+    <li>Pace.js</li>
+    <li>Sweet Alert 2</li>
+</ul>
