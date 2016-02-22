@@ -9,11 +9,15 @@
 }
 .demo-card-image > .mdl-card__actions {
     height: 25px;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
+    padding-bottom: 25px;
+    background: rgba(0, 0, 0, 0.34);
 }
 .demo-card-image__filename {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+}
+
+#name_profile_pic{
+    margin-left: 60px;
 }
