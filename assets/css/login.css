@@ -24,9 +24,25 @@
 #lock_password{
     margin-top: 20px;
     margin-right: 5px;
+    margin-left: 18px;
 }
 
 #dashboard_header{
     margin-top: 22px;
     margin-right: 2px;
+}
+
+#password_button{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    #lock_password{
+        margin-left: -5px;
+    }
+
+    #logincard{
+        margin-top: 20px;
+    }
 }

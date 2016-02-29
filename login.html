@@ -99,19 +99,20 @@
                                 <div class="mdl-grid mdl-grid--no-spacing">
                                     <div class="mdl-layout-spacer"></div>
                                     <span id="account_circle_username" class="material-icons">account_circle</span>
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                                         <input class="mdl-textfield__input" type="text" id="username"/>
-                                        <label class="mdl-textfield__label" for="username">Username</label>
+                                        <label id="label_username" class="mdl-textfield__label" for="username">Username</label>
                                     </div>
                                     <div class="mdl-layout-spacer"></div>
                                 </div>
                                 <div class="mdl-grid mdl-grid--no-spacing">
                                     <div class="mdl-layout-spacer"></div>
                                     <span id="lock_password" class="material-icons">lock</span>
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--7-col-desktop mdl-cell--5-col-tablet mdl-cell--3-col-phone">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                                         <input class="mdl-textfield__input" type="password" id="password"/>
-                                        <label class="mdl-textfield__label" for="password">Password</label>
+                                        <label id="label_password" class="mdl-textfield__label" for="password">Password</label>
                                     </div>
+                                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="password_button" type="button"><i id="password_button_icon" class="material-icons">visibility</i></button>
                                     <div class="mdl-layout-spacer"></div>
                                 </div>
                                 <div class="mdl-grid mdl-grid--no-spacing">
@@ -136,5 +137,6 @@
                 </div>
             </main>
         </div>
+        <script src="assets/js/login.js"></script>
     </body>
 </html>
