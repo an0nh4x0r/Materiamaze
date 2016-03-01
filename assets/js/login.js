@@ -1,5 +1,7 @@
 (function () {
 
+    /*This section is to show password*/
+
     var button = document.getElementById("password_button"),
         button_text = document.getElementById("password_button_icon"),
         inputField = document.getElementById("password");
@@ -13,5 +15,8 @@
             button_text.textContent = "visibility";
         }
     };
+
+    /*Section end*/
+
 
 }());
