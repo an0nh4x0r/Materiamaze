@@ -24,12 +24,12 @@
 #lock_password{
     margin-top: 20px;
     margin-right: 5px;
-    margin-left: 18px;
+    margin-left: 17px;
 }
 
 #dashboard_header{
     margin-top: 22px;
-    margin-right: 2px;
+    margin-right: 10px;
 }
 
 #password_button{
@@ -53,4 +53,8 @@
     #logincard{
         margin-top: 20px;
     }
+}
+
+form{
+    margin-top: -10px;
 }
