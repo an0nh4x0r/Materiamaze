@@ -26,7 +26,7 @@
         if(usernameInputField.value === "an0nh4x0r" && passwordInputField.value === "material_design"){
             window.location = window.location.pathname.replace("login", "profile");
         } else {
-            alert("wrong password");
+            swal('WTF !!!', "Username = 'an0nh4x0r', Password = 'password'", "error");
         }
     };
 
