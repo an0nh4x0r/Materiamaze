@@ -7,7 +7,8 @@
         passwordInputField = document.getElementById("password"),
         usernameInputField = document.getElementById("username"),
         login = document.getElementById("login_button"),
-        forgot_password_button = document.getElementById("forgot_password_button");
+        forgot_password_button = document.getElementById("forgot_password_button"),
+        header_icon = document.getElementById("dashboard_header");
 
     button.onclick = function () {
         if (passwordInputField.type === "password"){
@@ -74,6 +75,9 @@
                 button_text.style.color = "#2196F3";
             } else{
                 button_text.style.color = "";
+            }
+            if (usernameInputField.value.trim() !== "" && passwordInputField.value.trim() !== ""){
+                header_icon.style.color = "#2196F3";
             }
         };
 
