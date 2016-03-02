@@ -37,6 +37,10 @@
     margin-left: 10px;
 }
 
+#forgot_password{
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 800px) {
     #lock_password{
         margin-left: -5px;
