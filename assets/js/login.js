@@ -70,6 +70,11 @@
             } else if(passwordInputField !== document.activeElement && passwordInputField.value.trim() === ""){
                 password_icon.style.color = "";
             }
+            if (passwordInputField.value.trim() !== ""){
+                button_text.style.color = "#2196F3";
+            } else{
+                button_text.style.color = "";
+            }
         };
 
         username_icon.addEventListener("click", check, false);
@@ -81,6 +86,10 @@
 
     /*section end*/
 
-    /*This section if */
+    /*This section if username and passwords are not empty then change the password show-hide eye icon color*/
+
+        /*This got implemented between line 73 and 77*/
+
+    /*Section end*/
 
 }());
