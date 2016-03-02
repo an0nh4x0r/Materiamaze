@@ -52,4 +52,35 @@
 
     /*Section end*/
 
+    /*This section checks if id = username or id = password is selected
+    * if they are selected then change the icon color
+    * */
+
+        var username_icon = document.getElementById("account_circle_username"),
+            password_icon = document.getElementById("lock_password");
+
+        var check = function () {
+            if (usernameInputField === document.activeElement){
+                username_icon.style.color = "#2196F3";
+            } else if (usernameInputField !== document.activeElement && usernameInputField.value.trim() === ""){
+                username_icon.style.color = "";
+            }
+            if (passwordInputField === document.activeElement){
+                password_icon.style.color = "#2196F3";
+            } else if(passwordInputField !== document.activeElement && passwordInputField.value.trim() === ""){
+                password_icon.style.color = "";
+            }
+        };
+
+        username_icon.addEventListener("click", check, false);
+        username_icon.addEventListener("keyup", check, false);
+        password_icon.addEventListener("click", check, false);
+        password_icon.addEventListener("keyup", check, false);
+        document.addEventListener("click", check, false);
+        document.addEventListener("keyup", check, false);
+
+    /*section end*/
+
+    /*This section if */
+
 }());
