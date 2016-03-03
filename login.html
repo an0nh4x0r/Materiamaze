@@ -90,61 +90,45 @@
             <main class="mdl-layout__content">
                 <div class="page-content">
 
-                    <div class="mdl-grid" id="logincard">
+                    <div class="mdl-grid mdl-grid--no-spacing">
                         <div class="mdl-layout-spacer"></div>
+
                         <div class="mdl-card mdl-shadow--2dp">
 
-                            <div class="mdl-grid mdl-grid--no-spacing">
-                                <div class="mdl-layout-spacer"></div>
-                                <i class="material-icons" id="dashboard_header">input</i><h5>Login Panel</h5>
-                                <div class="mdl-layout-spacer"></div>
+                            <div class="mdl-card__title mdl-card--border">
+                                <h5 class="mdl-card__title-text">Login Panel</h5>
                             </div>
-                            <form action="profile.html">
-                                <div class="mdl-grid mdl-grid--no-spacing">
-                                    <div class="mdl-layout-spacer"></div>
-                                    <span id="account_circle_username" class="material-icons">account_circle</span>
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                        <input class="mdl-textfield__input" type="text" id="username"/>
-                                        <label id="label_username" class="mdl-textfield__label" for="username">Username</label>
-                                    </div>
-                                    <div class="mdl-layout-spacer"></div>
+
+                            <div class="mdl-grid mdl-grid--no-spacing">
+                                <i id="account_circle" class="material-icons">account_circle</i>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <input class="mdl-textfield__input" type="text" id="username">
+                                    <label class="mdl-textfield__label" for="username">Username</label>
                                 </div>
-                                <div class="mdl-grid mdl-grid--no-spacing">
-                                    <div class="mdl-layout-spacer"></div>
-                                    <span id="lock_password" class="material-icons">lock</span>
-                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                                        <input class="mdl-textfield__input" type="password" id="password"/>
-                                        <label id="label_password" class="mdl-textfield__label" for="password">Password</label>
-                                    </div>
-                                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="password_button" type="button"><i id="password_button_icon" class="material-icons">visibility</i></button>
-                                    <div class="mdl-layout-spacer"></div>
+                            </div>
+
+                            <div id="password_div" class="mdl-grid mdl-grid--no-spacing">
+                                <i id="lock" class="material-icons">lock</i>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+                                    <input class="mdl-textfield__input" type="password" id="password">
+                                    <label class="mdl-textfield__label" for="password">Password</label>
                                 </div>
-                                <div class="mdl-grid mdl-grid--no-spacing">
-                                    <div class="mdl-layout-spacer"></div>
-                                    <div id="logincheckbox">
-                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember_me">
-                                            <input type="checkbox" id="remember_me" class="mdl-checkbox__input">
-                                            <span class="mdl-checkbox__label" id="logincheckbox__span">Remember Me</span>
-                                        </label>
-                                    </div>
-                                    <div id="loginbutton">
-                                        <button id="login_button" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                            Login
-                                        </button>
-                                    </div>
-                                    <div class="mdl-layout-spacer"></div>
-                                </div>
-                            </form>
+                                <button id="visibility" class="mdl-button mdl-js-button mdl-button--icon">
+                                    <i class="material-icons">visibility</i>
+                                </button>
+                            </div>
+                            <hr>
+                            <div id="actions" class="mdl-card__actions">
+                                <button type="submit" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+                                    submit
+                                </button>
+                            </div>
+
                         </div>
+
                         <div class="mdl-layout-spacer"></div>
                     </div>
-                    <div class="mdl-grid">
-                        <div class="mdl-layout-spacer"></div>
-                        <button id="forgot_password_button" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-                            <span id="forgot_password">Forgot Password ?</span>
-                        </button>
-                        <div class="mdl-layout-spacer"></div>
-                    </div>
+
                 </div>
             </main>
         </div>
