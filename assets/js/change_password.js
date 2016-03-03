@@ -22,12 +22,23 @@
     };
 
     submit.onclick = function () {
-        if (new_pass.type !== again_pass.type){
+        if (new_pass.value.trim() !== again_pass.value.trim()){
             swal({
-                title   :   "Oops..",
+                title               :   "Oops..!",
+                type                :   "error",
+                timer               :   2000,
+                html                :   "<strong>New Password doesn\'t matches to Again New Password.</strong>",
+                showConfirmButton   :   false
+            });
+        }
+
+        if (curr_pass.value.trim() === "" || new_pass.value.trim() === "" || again_pass.value.trim() === ""){
+            swal({
+                title   :   "Error..!",
                 type    :   "error",
-                timer   :   1300,
-                html    :   "<strong>New Password doesn\'t matches to Again password Field</strong>"
+                timer   :   1800,
+                html    :   "<strong>Please fill all the fields.</strong>",
+                showConfirmButton   :   false
             });
         }
     }
