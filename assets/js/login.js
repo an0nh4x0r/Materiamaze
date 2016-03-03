@@ -47,7 +47,8 @@
                 title               :   'Forgot Password ?',
                 html                :   '<label for="email" style="font-size: 15px; font-style: italic;">Email Address: </label></label><input id="email" />',
                 confirmButtonColor  :   '#2196F3',
-                confirmButtonText   :   'Submit'
+                confirmButtonText   :   'Submit',
+                showCancelButton    :   true
             });
         };
 
