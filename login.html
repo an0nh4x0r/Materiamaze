@@ -157,8 +157,9 @@
                             <div id="phone_div" class="mdl-grid mdl-grid--no-spacing">
                                 <i id="phone" class="material-icons">phone</i>
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                                    <input class="mdl-textfield__input" type="text" id="phone_no">
+                                    <input class="mdl-textfield__input" type="text" id="phone_no" pattern="-?[0-9]*(\.[0-9]+)?">
                                     <label class="mdl-textfield__label" for="phone_no">Mobile Number</label>
+                                    <span class="mdl-textfield__error">Input is not a number!</span>
                                 </div>
                             </div>
 
