@@ -93,7 +93,7 @@
                     <div class="mdl-grid mdl-grid--no-spacing">
                         <div class="mdl-layout-spacer"></div>
 
-                        <div class="mdl-card mdl-shadow--2dp">
+                        <div id="login_card" class="mdl-card mdl-shadow--2dp">
 
                             <div class="mdl-card__title mdl-card--border">
                                 <h5 class="mdl-card__title-text">Login Panel</h5>
@@ -117,16 +117,63 @@
                                     <i class="material-icons">visibility</i>
                                 </button>
                             </div>
-                            <hr>
-                            <div id="actions" class="mdl-card__actions">
-                                <button type="submit" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
-                                    submit
+
+                            <div id="actions" class="mdl-grid mdl-card__actions">
+
+                                <label id="remember_me_label" class="mdl-cell--1-offset-desktop mdl-cell--6-col-desktop mdl-cell--1-offset-tablet mdl-cell--4-col-tablet mdl-cell--2-col-phone mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="remember_me">
+                                    <input type="checkbox" id="remember_me" class="mdl-checkbox__input">
+                                    <span id="remember_me_span" class="mdl-checkbox__label">Remember Me</span>
+                                </label>
+
+                                <button id="login_card_submit" type="submit" class="mdl-cell--1-offset-desktop mdl-cell--4-col-desktop mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+                                    login
                                 </button>
+
                             </div>
 
                         </div>
 
                         <div class="mdl-layout-spacer"></div>
+                    </div>
+
+                    <div class="mdl-grid mdl-grid--no-spacing">
+
+                        <div class="mdl-layout-spacer"></div>
+
+                        <div id="forgot_password_card" class="mdl-card mdl-shadow--2dp">
+
+                            <div class="mdl-card__title mdl-card--border">
+                                <h5 class="mdl-card__title-text">Forgot Password</h5>
+                            </div>
+
+                            <div class="mdl-grid mdl-grid--no-spacing">
+                                <i id="email" class="material-icons">email</i>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <input class="mdl-textfield__input" type="text" id="email_addr">
+                                    <label class="mdl-textfield__label" for="email_addr">Email Address</label>
+                                </div>
+                            </div>
+
+                            <div id="phone_div" class="mdl-grid mdl-grid--no-spacing">
+                                <i id="phone" class="material-icons">phone</i>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                    <input class="mdl-textfield__input" type="text" id="phone_no">
+                                    <label class="mdl-textfield__label" for="phone_no">Mobile Number</label>
+                                </div>
+                            </div>
+
+                            <div id="submit_div" class="mdl-grid mdl-grid--no-spacing">
+                                <div class="mdl-layout-spacer"></div>
+                                <button type="submit" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+                                    submit
+                                </button>
+                                <div class="mdl-layout-spacer"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="mdl-layout-spacer"></div>
+
                     </div>
 
                 </div>

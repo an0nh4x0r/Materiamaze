@@ -1,9 +1,9 @@
-#account_circle, #lock{
+#account_circle, #lock, #email, #phone{
     margin-top: 23px;
 }
 
 #actions{
-    margin-top: -10px;
+    margin-top: 5px;
 }
 
 #visibility{
@@ -16,4 +16,35 @@
 
 #password_div{
     margin-top: -10px;
+}
+
+#remember_me_span{
+    font-size: 13px;
+    font-style: italic;
+}
+
+#remember_me_label{
+    margin-top: 5px;
+}
+
+#phone_div{
+    margin-top: -10px;
+}
+
+#submit_div{
+    margin-bottom: 10px;
+}
+
+#login_card, #forgot_password_card{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    #remember_me_label{
+        margin-left: 20px;
+    }
+
+    #login_card_submit{
+        margin-left: 30px;
+    }
 }
