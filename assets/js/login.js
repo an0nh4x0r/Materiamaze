@@ -1,4 +1,5 @@
 (function () {
+
     var i_show_password = document.getElementById("visibility"),
         i_show_password_icon = document.getElementById("visibility_icon"),
         password = document.getElementById("password");
@@ -14,4 +15,5 @@
     };
 
     i_show_password.addEventListener("click", check, false);
+
 }());
