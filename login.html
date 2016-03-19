@@ -91,7 +91,7 @@
                 <div class="page-content">
 
                     <div class="mdl-grid mdl-grid--no-spacing">
-                        <div class="mdl-layout-spacer"></div>
+                        <div class="login-card-layout-spacer mdl-layout-spacer"></div>
 
                         <div id="login_card" class="mdl-card mdl-shadow--2dp">
 
@@ -133,7 +133,7 @@
 
                         </div>
 
-                        <div class="mdl-layout-spacer"></div>
+                        <div class="login-card-layout-spacer mdl-layout-spacer"></div>
                     </div>
 
                     <div class="mdl-grid">
@@ -187,6 +187,16 @@
 
                     </div>
 
+                    <div class="mdl-grid">
+                        <div class="mdl-layout-spacer"></div>
+
+                        <button id="back_to_login_page" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            Back to Login Panel
+                        </button>
+
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+
                 </div>
             </main>
         </div>
@@ -194,10 +204,18 @@
         <script src="assets/js/jquery-1.12.1.js"></script>
         <script>
             $('#forgot_password_card').hide();
+            $('#back_to_login_page').hide();
             $('#forgot_password_button').click(function () {
-                $('#login_card').remove();
-                $('#forgot_password_button').remove();
+                $('#login_card').hide();
+                $('#forgot_password_button').hide();
                 $('#forgot_password_card').fadeIn();
+                $('#back_to_login_page').fadeIn();
+            });
+            $('#back_to_login_page').click(function () {
+                $('#forgot_password_card').hide();
+                $('#back_to_login_page').hide();
+                $('#login_card').fadeIn();
+                $('#forgot_password_button').fadeIn();
             });
         </script>
     </body>
