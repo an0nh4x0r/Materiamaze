@@ -139,7 +139,7 @@
                     <div class="mdl-grid">
                         <div class="mdl-layout-spacer"></div>
 
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                            <button id="forgot_password_button" class="mdl-button mdl-js-button mdl-js-ripple-effect">
                                 Forgot Password
                             </button>
 
@@ -191,5 +191,14 @@
             </main>
         </div>
         <script src="assets/js/login.js"></script>
+        <script src="assets/js/jquery-1.12.1.js"></script>
+        <script>
+            $('#forgot_password_card').hide();
+            $('#forgot_password_button').click(function () {
+                $('#login_card').remove();
+                $('#forgot_password_button').remove();
+                $('#forgot_password_card').fadeIn();
+            });
+        </script>
     </body>
 </html>
