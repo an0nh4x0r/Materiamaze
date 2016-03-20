@@ -36,11 +36,11 @@
 }
 
 #login_card{
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 #forgot_password_card{
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 500px) {
