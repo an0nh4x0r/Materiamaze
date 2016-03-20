@@ -3,9 +3,18 @@
     scrolling comes in the sidebar
 */
 
+/*
+    Line 13 by default makes the scroll bar hidden, on hovering it on line 17 it becomes visible!
+*/
+
 .mdl-layout__drawer{
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.mdl-layout__drawer:hover{
+    overflow-y: visible;
 }
 
 /*Good snippet*/
