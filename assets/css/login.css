@@ -63,7 +63,7 @@ body{
     background: url("../images/login.svg") no-repeat;
 }
 
-.mdl-card__title > h2, .mdl-card__title > h5 {
+.mdl-card__title > span {
     color: #fafafa;
 }
 
@@ -74,4 +74,5 @@ body{
 
 #horizontal_line_f_p{
     margin-top: 5px;
+    margin-bottom: 14px;
 }
