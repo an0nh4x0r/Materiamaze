@@ -56,3 +56,22 @@
 body{
     background-color: rgb(250, 250, 250);
 }
+
+.mdl-card__title{
+    width: 331px;
+    height: 110px;
+    background: url("../images/login.svg") no-repeat;
+}
+
+.mdl-card__title > h2, .mdl-card__title > h5 {
+    color: #fafafa;
+}
+
+#horizontal_line{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#horizontal_line_f_p{
+    margin-top: 5px;
+}
