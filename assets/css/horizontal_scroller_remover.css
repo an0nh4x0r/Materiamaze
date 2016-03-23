@@ -10,11 +10,10 @@
 .mdl-layout__drawer{
     max-width: 100%;
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
 }
-/*
 .mdl-layout__drawer:hover{
     overflow-y: visible;
-}*/
+}
 
 /*Good snippet*/
