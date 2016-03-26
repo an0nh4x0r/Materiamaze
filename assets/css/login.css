@@ -76,3 +76,14 @@ body{
     margin-top: 5px;
     margin-bottom: 14px;
 }
+
+/*This snippet starts here is very very important*/
+/*
+    work :- applying this footer scrolls along
+    with the test and donot sticks there!
+*/
+main{
+    flex: 1 0 auto;
+}
+
+/*Snippet end*/

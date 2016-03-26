@@ -1,10 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE <html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Update Browser</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="description" content="Login page for Materiamaze.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Update Your Browser</title><!--
+    <script src="assets/js/pace.min.js"></script>
+    <link rel="stylesheet" href="assets/css/pace.css"/>-->
+    <link rel="stylesheet" href="assets/mdl/material.blue-light_blue.min.css"/>
+    <script src="assets/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="assets/animate_it/css/animations.css">
+    <link rel="stylesheet" href="assets/animate_it/css/animations-ie-fix.css">
+    <style>
+        body{
+            background-color: #42A5F5;
+        }
+        .animatedParent > h1{
+            color: #fafafa;
+        }
+        #chrome{
+            width: 150px;
+        }
+        #chrome_icon{
+            height: 50px;
+        }
+        #firefox_icon{
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Please update your browser</h1>
+
+    <div class="mdl-grid mdl-grid--no-spacing">
+
+        <div class="mdl-grid mdl-grid--no-spacing mdl-cell--12-col-desktop">
+            <div class="mdl-layout-spacer"></div>
+            <div class="animatedParent">
+                <h1 class="animated pulse">Update your browser</h1>
+            </div>
+            <div class="mdl-layout-spacer"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="animatedParent">
+                <img id="chrome_icon" class="animated bounceInLeft" src="assets/images/chrome.png"/>
+                <button class="mdl-button animated bounceInLeft">Google Chrome</button>
+            </div>
+
+            <br>
+
+            <div class="animatedParent">
+                <button class="mdl-button animated bounceInRight">Mozilla Firefox</button>
+                <img id="firefox_icon" class="animated bounceInRight" src="assets/images/firefox.png"/>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <script src="assets/animate_it/js/css3-animate-it.js"></script>
 </body>
 </html>
