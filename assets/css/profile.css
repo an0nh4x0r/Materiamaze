@@ -22,7 +22,7 @@
     margin-left: 60px;
 }
 
-#curve_chart{
+#curve_chart, #donutchart{
     height: 300px;
     width: 100%;
 }

@@ -73,8 +73,11 @@
                 <!--Page Content goes here-->
 
                 <div class="mdl-grid">
-                    <div class="mdl-card mdl-shadow--2dp mdl-cell--6-col-desktop mdl-cell--3-offset-desktop">
-                        <div id="curve_chart"></div>
+                    <div class="mdl-cell--6-col-desktop">
+                        <div class="mdl-card mdl-shadow--2dp" id="curve_chart"></div>
+                    </div>
+                    <div class="mdl-cell--6-col-desktop">
+                        <div class="mdl-card mdl-shadow--2dp" id="donutchart"></div>
                     </div>
                 </div>
 
@@ -184,9 +187,28 @@
             chart.draw(data, options);
         }
 
-        $(window).resize(function(){
-            drawChart();
-        });
+        google.charts.setOnLoadCallback(doNut);
+
+        function doNut(){
+            var data1 = google.visualization.arrayToDataTable([
+                    ['Subjects', 'Attendance'],
+                    ['Software Engineering', 30],
+                    ['ADA', 23],
+                    ['D.COM', 25],
+                    ['CGMI', 35],
+                    ['Network & Web Security', 24]
+            ]);
+
+            var options1 = {
+                title: 'Attendance',
+                pieHole: 0.4,
+            };
+
+            var chart1 = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart1.draw(data1, options1);
+
+        }
+
     </script>
 </body>
 </html>
