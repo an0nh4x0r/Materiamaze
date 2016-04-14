@@ -21,3 +21,8 @@
 #name_profile_pic{
     margin-left: 60px;
 }
+
+#curve_chart{
+    height: 300px;
+    width: 100%;
+}
