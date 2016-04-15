@@ -23,5 +23,18 @@
 }
 
 #curve_chart, #donutchart{
-    height: 300px;
+    height: 350px;
+    width: 100%;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.drawer_icons{
+    margin-right: 10px;
+}
+
+.mdl-navigation{
+    margin-top: -14px;
 }
