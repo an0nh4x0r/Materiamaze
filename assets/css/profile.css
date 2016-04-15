@@ -38,3 +38,7 @@ a:hover{
 .mdl-navigation{
     margin-top: -14px;
 }
+
+.mdl-navigation__link{
+    border-bottom: 1px solid #e3e3e3;
+}
