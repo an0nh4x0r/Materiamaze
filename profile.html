@@ -8,6 +8,8 @@
     <title>Profile</title>
     <script src="assets/js/pace.min.js"></script>
     <link rel="stylesheet" href="assets/css/pace.css"/>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/google_chart_code.js"></script>
     <link rel="stylesheet" href="assets/mdl/material.blue-light_blue.min.css"/>
     <script src="assets/mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
@@ -71,13 +73,12 @@
             <div class="page-content">
 
                 <!--Page Content goes here-->
-
                 <div class="mdl-grid">
-                    <div class="mdl-cell--6-col-desktop">
-                        <div class="mdl-card mdl-shadow--2dp" id="curve_chart"></div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell--5-col-desktop mdl-cell--1-offset-desktop mdl-cell--7-col-tablet mdl-cell--1-offset-tablet">
+                        <div id="curve_chart"></div>
                     </div>
-                    <div class="mdl-cell--6-col-desktop">
-                        <div class="mdl-card mdl-shadow--2dp" id="donutchart"></div>
+                    <div class="mdl-card mdl-shadow--2dp mdl-cell--5-col-desktop mdl-cell--7-col-tablet mdl-cell--1-offset-tablet">
+                        <div id="donutchart"></div>
                     </div>
                 </div>
 
@@ -148,9 +149,53 @@
 
                 <hr>
 
+                <h4 style="text-align: center">Upcoming Staff & Student Birthday!</h4>
+
                 <div class="mdl-grid">
-
-
+                    <div class="mdl-layout-spacer"></div>
+                    <ul class="mdl-list mdl-card mdl-shadow--2dp">
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Swapnil Singh (CSE - 3rd Year)</span>
+                                <span class="mdl-list__item-sub-title">20 years old on 24/01/2016</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Abhishek Singh (EC - 3rd Year)</span>
+                                <span class="mdl-list__item-sub-title">21 years old on 15/02/2016</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Harsh Bhatia (CSE - 3rd Year)</span>
+                                <span class="mdl-list__item-sub-title">20 years old on 27/07/2016</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Sanjeev Jain (Director)</span>
+                                <span class="mdl-list__item-sub-title">52 years old on 03/11/2016</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Alak Yadav (CSE - 3rd Year)</span>
+                                <span class="mdl-list__item-sub-title">20 years old on 14/4/2016</span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-grid">
+                            <div class="mdl-layout-spacer"></div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">See More</button>
+                            <div class="mdl-layout-spacer"></div>
+                        </li>
+                    </ul>
+                    <div class="mdl-layout-spacer"></div>
 
                 </div>
 
@@ -159,56 +204,5 @@
         </main>
     </div>
     <script src="assets/js/jquery-1.12.1.min.js"></script>
-    <script src="assets/js/loader.js"></script>
-    <script>
-        google.charts.load('current', {'packages' :['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart(){
-            var data = google.visualization.arrayToDataTable([
-                ['Semester', 'Pointer'],
-                ['First', 5.7],
-                ['Second', 6.5],
-                ['Third', 6.5],
-                ['Fourth', 6.9],
-                ['Fifth', 5.9],
-                ['Sixth', 7.5]
-            ]);
-
-            var options = {
-                pointSize: 10,
-                title:  'Semester Performance',
-                curveType:  'function',
-                legend: { position: 'bottom' }
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-            chart.draw(data, options);
-        }
-
-        google.charts.setOnLoadCallback(doNut);
-
-        function doNut(){
-            var data1 = google.visualization.arrayToDataTable([
-                    ['Subjects', 'Attendance'],
-                    ['Software Engineering', 30],
-                    ['ADA', 23],
-                    ['D.COM', 25],
-                    ['CGMI', 35],
-                    ['Network & Web Security', 24]
-            ]);
-
-            var options1 = {
-                title: 'Attendance',
-                pieHole: 0.4,
-            };
-
-            var chart1 = new google.visualization.PieChart(document.getElementById('donutchart'));
-            chart1.draw(data1, options1);
-
-        }
-
-    </script>
 </body>
 </html>
