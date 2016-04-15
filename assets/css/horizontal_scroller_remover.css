@@ -12,16 +12,5 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.mdl-layout__drawer:hover{
-    overflow-y: visible;
-}
 
 /*Good snippet*/
-
-@media only screen and (max-width: 1010px) {
-    .mdl-layout__drawer{
-        max-width: 100%;
-        overflow-x: hidden;
-        overflow-y: visible;
-    }
-}

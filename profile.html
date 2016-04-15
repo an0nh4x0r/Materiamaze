@@ -41,29 +41,33 @@
         </header>
         <div class="mdl-layout__drawer">
 
+            <div class="slim_shady_scroll">
 
-
-            <div class="demo-card-image mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand"></div>
-                <div class="mdl-card__actions">
-                    <span id="name_profile_pic" class="demo-card-image__filename">Swapnil Singh</span>
+                <div class="demo-card-image mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand"></div>
+                    <div class="mdl-card__actions">
+                        <span id="name_profile_pic" class="demo-card-image__filename">Swapnil Singh</span>
+                    </div>
                 </div>
+
+
+
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">account_circle</i>Profile</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">assessment</i>Attendance</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">message</i>Message <span class="badge">4</span></a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">notifications</i>Notifications <span class="badge">17</span></a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">error_outline</i>Result <span class="badge">new</span></a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">assignment</i>Assignment</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">chrome_reader_mode</i>Question Bank</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">description</i>Time Table</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">home</i>Hostel Reg.</a>
+                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">library_books</i>Library Search</a>
+                </nav>
+
             </div>
 
 
-
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">account_circle</i>Profile</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">assessment</i>Attendance</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">message</i>Message <span class="badge">4</span></a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">notifications</i>Notifications <span class="badge">17</span></a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">error_outline</i>Result <span class="badge">new</span></a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">assignment</i>Assignment</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">chrome_reader_mode</i>Question Bank</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">description</i>Time Table</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">home</i>Hostel Reg.</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">library_books</i>Library Search</a>
-            </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
@@ -200,5 +204,14 @@
         </main>
     </div>
     <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script>
+        $(function () {
+            $('.slim_shady_scroll').slimScroll({
+                height: '100%',
+                railVisible: true
+            })
+        });
+    </script>
 </body>
 </html>
