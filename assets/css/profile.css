@@ -42,3 +42,8 @@ a:hover{
 .mdl-navigation__link{
     border-bottom: 1px solid #e3e3e3;
 }
+
+.badge{
+    background-color: #58CAFE;
+    color: #000;
+}
