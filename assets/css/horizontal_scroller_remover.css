@@ -14,3 +14,8 @@
 }
 
 /*Good snippet*/
+
+
+.mdl-layout__content{
+    overflow-y: hidden;
+}
