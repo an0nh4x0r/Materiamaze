@@ -53,7 +53,7 @@
 
 
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">account_circle</i>Profile</a>
+                    <a class="mdl-navigation__link active" href="#"><i class="material-icons drawer_icons">account_circle</i>Profile</a>
                     <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">assessment</i>Attendance</a>
                     <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">message</i>Message <span class="badge">4</span></a>
                     <a class="mdl-navigation__link" href="#"><i class="material-icons drawer_icons">notifications</i>Notifications <span class="badge">17</span></a>
@@ -70,7 +70,7 @@
 
         </div>
         <main class="mdl-layout__content">
-            <div class="slim_shady_page_content">
+
 
                 <div class="page-content">
 
@@ -201,10 +201,7 @@
 
                     </div>
 
-
                 </div>
-
-            </div>
 
         </main>
     </div>
@@ -213,18 +210,10 @@
     <script>
         $(function () {
             $('.slim_shady_scroll').slimScroll({
-                height: '100%',
-                alwaysVisible: true
+                height: '100%'
             })
         });
 
-        $(function () {
-            $('.slim_shady_page_content').slimScroll({
-                height: '100%',
-                alwaysVisible: true,
-                size: '10px'
-            });
-        })
     </script>
 </body>
 </html>

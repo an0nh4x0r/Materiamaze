@@ -47,3 +47,7 @@ a:hover{
     background-color: #58CAFE;
     color: #000;
 }
+
+.active{
+    background-color: #e3e3e3;
+}
